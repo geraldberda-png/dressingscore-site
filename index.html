@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dressing Score — Fais le tri. Échange. Ne garde que l'essentiel.</title>
-  <meta name="description" content="Dressing Score t'aide à scorer chaque vêtement, suggérer des tenues avec l'IA, et échanger avec tes amis Keepers." />
+  <meta name="description" content="Dressing Score t'aide à scorer chaque vêtement, suggérer des tenues avec l'IA, et échanger avec tes amis Swappers." />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -295,34 +295,34 @@
     }
 
     /* ── KEEPERS ── */
-    .keepers-section { background: var(--bg); }
-    .keepers-grid {
+    .swappers-section { background: var(--bg); }
+    .swappers-grid {
       display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px;
     }
-    .keeper-card {
+    .swapper-card {
       background: var(--bg2);
       border: 1px solid rgba(255,255,255,0.06);
       border-radius: 20px; padding: 28px;
       transition: border-color .3s;
     }
-    .keeper-card:hover { border-color: var(--gold-border); }
-    .keeper-avatar {
+    .swapper-card:hover { border-color: var(--gold-border); }
+    .swapper-avatar {
       width: 52px; height: 52px;
       background: var(--gold-dim);
       border: 1px solid var(--gold-border);
       border-radius: 50%; display: flex; align-items: center; justify-content: center;
       font-size: 22px; margin-bottom: 16px;
     }
-    .keeper-name { font-size: 16px; font-weight: 800; margin-bottom: 4px; }
-    .keeper-stat { font-size: 13px; color: var(--text-dim); margin-bottom: 14px; }
-    .keeper-tags { display: flex; flex-wrap: wrap; gap: 6px; }
-    .keeper-tag {
+    .swapper-name { font-size: 16px; font-weight: 800; margin-bottom: 4px; }
+    .swapper-stat { font-size: 13px; color: var(--text-dim); margin-bottom: 14px; }
+    .swapper-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+    .swapper-tag {
       font-size: 11px; font-weight: 700;
       padding: 4px 10px; border-radius: 8px;
       background: rgba(255,255,255,0.05);
       color: var(--text-dim);
     }
-    .keeper-tag.gold {
+    .swapper-tag.gold {
       background: var(--gold-dim);
       border: 1px solid var(--gold-border);
       color: var(--gold);
@@ -416,7 +416,7 @@
     <h1>Fais le tri.<br /><em>Échange avec tes amis.</em><br />Ne garde que l'essentiel.</h1>
 
     <p class="hero-sub">
-      Dressing Score t'aide à scorer chaque vêtement, découvrir des associations de vêtements avec l'IA, et donner ou échanger directement avec tes amis Keepers.
+      Dressing Score t'aide à scorer chaque vêtement, découvrir des associations de vêtements avec l'IA, et donner ou échanger directement avec tes amis Swappers.
     </p>
 
     <div class="hero-actions">
@@ -448,11 +448,11 @@
         <div class="feature-card">
           <div class="feature-icon">✨</div>
           <div class="feature-title">Suggestions IA</div>
-          <p class="feature-desc">L'IA analyse ta garde-robe et propose des associations stylistiques entre tes pièces, ou avec les dressings de tes amis Keepers.</p>
+          <p class="feature-desc">L'IA analyse ta garde-robe et propose des associations stylistiques entre tes pièces, ou avec les dressings de tes amis Swappers.</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon">🔄</div>
-          <div class="feature-title">Troc entre Keepers</div>
+          <div class="feature-title">Troc entre Swappers</div>
           <p class="feature-desc">Propose des échanges ou des dons directement à tes amis, sans intermédiaire. La mode circulaire, au plus simple.</p>
         </div>
         <div class="feature-card">
@@ -549,7 +549,7 @@
           <div class="section-label">Intelligence Artificielle</div>
           <h2 class="section-title">Ton styliste personnel, disponible 24h/24.</h2>
           <p style="font-size:16px; color:var(--text-dim); line-height:1.8; margin-bottom:24px;">
-            L'IA analyse tes pièces et propose des associations stylistiques pertinentes. Elle compare aussi ton dressing avec celui de tes Keepers pour suggérer des échanges ou dons qui ont du sens.
+            L'IA analyse tes pièces et propose des associations stylistiques pertinentes. Elle compare aussi ton dressing avec celui de tes Swappers pour suggérer des échanges ou dons qui ont du sens.
           </p>
           <div style="display:flex; flex-direction:column; gap:12px;">
             <div style="display:flex; align-items:flex-start; gap:12px;">
@@ -558,7 +558,7 @@
             </div>
             <div style="display:flex; align-items:flex-start; gap:12px;">
               <span style="font-size:18px;">⚡</span>
-              <span style="font-size:14px; color:var(--text-dim); line-height:1.6;">Suggestions inter-dressings avec tes amis Keepers</span>
+              <span style="font-size:14px; color:var(--text-dim); line-height:1.6;">Suggestions inter-dressings avec tes amis Swappers</span>
             </div>
             <div style="display:flex; align-items:flex-start; gap:12px;">
               <span style="font-size:18px;">🎯</span>
@@ -590,7 +590,7 @@
               <div class="ai-plus">↔</div>
               <div class="ai-vet">
                 <div class="ai-vet-emoji">💛</div>
-                <div class="ai-vet-name">Lucie (Keeper)</div>
+                <div class="ai-vet-name">Lucie (Swapper)</div>
               </div>
             </div>
             <div class="ai-tip">🤝 Lucie a une veste en cuir qui complèterait parfaitement ta robe midi. Elle cherche des sneakers — échange suggéré !</div>
@@ -601,42 +601,42 @@
   </section>
 
   <!-- KEEPERS -->
-  <section class="keepers-section">
+  <section class="swappers-section">
     <div class="container">
       <div class="section-label">La communauté</div>
-      <h2 class="section-title">Rejoins les Keepers.</h2>
+      <h2 class="section-title">Rejoins les Swappers.</h2>
       <p class="section-sub">
-        Les Keepers, c'est la communauté Dressing Score. Des personnes qui choisissent de consommer mieux — en échangeant et en donnant entre amis.
+        Les Swappers, c'est la communauté Dressing Score. Des personnes qui choisissent de consommer mieux — en échangeant et en donnant entre amis.
       </p>
-      <div class="keepers-grid">
-        <div class="keeper-card">
-          <div class="keeper-avatar">👤</div>
-          <div class="keeper-name">Sarah K.</div>
-          <div class="keeper-stat">32 vêtements scorés · 4 échanges</div>
-          <div class="keeper-tags">
-            <span class="keeper-tag gold">Keeper actif</span>
-            <span class="keeper-tag">Streetwear</span>
-            <span class="keeper-tag">Vintage</span>
+      <div class="swappers-grid">
+        <div class="swapper-card">
+          <div class="swapper-avatar">👤</div>
+          <div class="swapper-name">Sarah K.</div>
+          <div class="swapper-stat">32 vêtements scorés · 4 échanges</div>
+          <div class="swapper-tags">
+            <span class="swapper-tag gold">Swapper actif</span>
+            <span class="swapper-tag">Streetwear</span>
+            <span class="swapper-tag">Vintage</span>
           </div>
         </div>
-        <div class="keeper-card">
-          <div class="keeper-avatar">👤</div>
-          <div class="keeper-name">Marc T.</div>
-          <div class="keeper-stat">18 vêtements scorés · 2 dons</div>
-          <div class="keeper-tags">
-            <span class="keeper-tag gold">Keeper actif</span>
-            <span class="keeper-tag">Casual</span>
-            <span class="keeper-tag">Sportswear</span>
+        <div class="swapper-card">
+          <div class="swapper-avatar">👤</div>
+          <div class="swapper-name">Marc T.</div>
+          <div class="swapper-stat">18 vêtements scorés · 2 dons</div>
+          <div class="swapper-tags">
+            <span class="swapper-tag gold">Swapper actif</span>
+            <span class="swapper-tag">Casual</span>
+            <span class="swapper-tag">Sportswear</span>
           </div>
         </div>
-        <div class="keeper-card">
-          <div class="keeper-avatar">👤</div>
-          <div class="keeper-name">Emma V.</div>
-          <div class="keeper-stat">47 vêtements scorés · 9 échanges</div>
-          <div class="keeper-tags">
-            <span class="keeper-tag gold">Top Keeper</span>
-            <span class="keeper-tag">Minimaliste</span>
-            <span class="keeper-tag">Premium</span>
+        <div class="swapper-card">
+          <div class="swapper-avatar">👤</div>
+          <div class="swapper-name">Emma V.</div>
+          <div class="swapper-stat">47 vêtements scorés · 9 échanges</div>
+          <div class="swapper-tags">
+            <span class="swapper-tag gold">Top Swapper</span>
+            <span class="swapper-tag">Minimaliste</span>
+            <span class="swapper-tag">Premium</span>
           </div>
         </div>
       </div>
@@ -648,7 +648,7 @@
     <div class="container">
       <div class="tf-inner">
         <h2>Prêt·e à trier ton dressing ?</h2>
-        <p>L'app est disponible en bêta sur TestFlight. Rejoins les premiers Keepers et donne une seconde vie à ta garde-robe.</p>
+        <p>L'app est disponible en bêta sur TestFlight. Rejoins les premiers Swappers et donne une seconde vie à ta garde-robe.</p>
         <a href="#" class="tf-btn">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
           Rejoindre sur TestFlight
@@ -667,7 +667,7 @@
       </svg>
       Dressing Score
     </div>
-    <p>© 2026 Dressing Score · Fait avec ♥ pour les Keepers</p>
+    <p>© 2026 Dressing Score · Fait avec ♥ pour les Swappers</p>
   </footer>
 
 </body>
