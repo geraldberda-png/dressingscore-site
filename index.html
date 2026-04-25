@@ -134,6 +134,20 @@
     }
     .store-badge:hover { transform: translateY(-2px); opacity: .9; }
     .store-badge img { display: block; }
+    .store-cta {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+    }
+    .store-hint {
+      font-size: 12px;
+      color: rgba(240,236,228,0.55);
+      max-width: 260px;
+      text-align: center;
+      line-height: 1.4;
+      margin: 0;
+    }
     .btn-ghost {
       border: 1px solid rgba(255,255,255,0.12);
       color: var(--text-dim);
@@ -420,9 +434,12 @@
       <a href="https://testflight.apple.com/join/Zy5jWHRj" class="store-badge" aria-label="Télécharger sur l'App Store">
         <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Télécharger sur l'App Store" height="56">
       </a>
-      <a href="https://play.google.com/apps/internaltest/4700687773452907422" class="store-badge" aria-label="Disponible sur Google Play">
-        <img src="https://play.google.com/intl/en_us/badges/static/images/badges/fr_badge_web_generic.png" alt="Disponible sur Google Play" height="84">
-      </a>
+      <div class="store-cta">
+        <a href="https://play.google.com/apps/internaltest/4700687773452907422" class="store-badge" aria-label="Disponible sur Google Play">
+          <img src="https://play.google.com/intl/en_us/badges/static/images/badges/fr_badge_web_generic.png" alt="Disponible sur Google Play" height="84">
+        </a>
+        <p class="store-hint">Cliquez sur le badge, puis sur Become a tester et enfin Download it on Google Play</p>
+      </div>
       <a href="#fonctionnalites" class="btn-ghost">Découvrir l'app</a>
     </div>
 
