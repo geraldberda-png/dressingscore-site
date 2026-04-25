@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dressing Score — Fais le tri. Échange. Ne garde que l'essentiel.</title>
-  <meta name="description" content="Dressing Score t'aide à scorer chaque vêtement, suggérer des tenues avec l'IA, et échanger avec tes amis Swappers." />
+  <meta name="description" content="Dressing Score t'aide à scorer chaque vêtement, suggérer des tenues avec votre styliste personnel, et échanger avec tes amis Swappers." />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -275,7 +275,7 @@
       font-style: italic; line-height: 1.5;
     }
 
-    /* ── KEEPERS ── */
+    /* ── SWAPPERS ── */
     .swappers-section { background: var(--bg); }
     .swappers-grid {
       display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px;
@@ -394,7 +394,7 @@
     <h1>Fais le tri.<br /><em>Échange avec tes amis.</em><br />Ne garde que l'essentiel.</h1>
 
     <p class="hero-sub">
-      Dressing Score t'aide à scorer chaque vêtement, découvrir des associations de vêtements avec l'IA, et donner ou échanger directement avec tes amis Swappers.
+      Dressing Score t'aide à scorer chaque vêtement, découvrir des associations de vêtements avec votre styliste personnel, et donner ou échanger directement avec tes amis Swappers.
     </p>
 
     <div class="hero-actions">
@@ -432,18 +432,18 @@
         </div>
         <div class="feature-card">
           <div class="feature-icon">✨</div>
-          <div class="feature-title">Suggestions IA</div>
-          <p class="feature-desc">L'IA analyse ta garde-robe et propose des associations stylistiques entre tes pièces, ou avec les dressings de tes amis Swappers.</p>
+          <div class="feature-title">Mon styliste</div>
+          <p class="feature-desc">Mon styliste analyse ta garde-robe et propose des associations stylistiques entre tes pièces, ou avec les dressings de tes amis Swappers.</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon">🔄</div>
-          <div class="feature-title">Troc entre Swappers</div>
-          <p class="feature-desc">Propose des échanges ou des dons directement à tes amis, sans intermédiaire. La mode circulaire, au plus simple.</p>
+          <div class="feature-title">Troc & chat entre Swappers</div>
+          <p class="feature-desc">Propose des échanges ou des dons à tes amis et discute directement avec eux dans le chat intégré — pas besoin de partager ton adresse ou ton téléphone. La mode circulaire, sans friction.</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon">📸</div>
-          <div class="feature-title">Scan par IA</div>
-          <p class="feature-desc">Prends une photo, l'IA identifie le vêtement, sa catégorie et estime sa valeur de revente selon la marque et l'état.</p>
+          <div class="feature-title">Scan automatique</div>
+          <p class="feature-desc">Une photo principale (et une photo d'étiquette en option) suffisent : l'app reconnaît le vêtement, sa catégorie et estime sa valeur de revente selon la marque et l'état.</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon">💰</div>
@@ -453,7 +453,7 @@
         <div class="feature-card">
           <div class="feature-icon">👗</div>
           <div class="feature-title">Dressing organisé</div>
-          <p class="feature-desc">Filtre par catégorie, saison, score. Visualise tes je les adores, tes pièces en suspens, et ce qui mérite une nouvelle vie.</p>
+          <p class="feature-desc">Filtre par catégorie, saison, score. Repère tes pièces "Je l'adore", celles où tu hésites, et celles dont tu peux te séparer.</p>
         </div>
       </div>
     </div>
@@ -472,15 +472,15 @@
           <div style="display:flex; flex-direction:column; gap:12px;">
             <div style="display:flex; align-items:center; gap:12px; font-size:14px; color:var(--text-dim);">
               <span style="width:10px; height:10px; border-radius:50%; background:#22c55e; flex-shrink:0;"></span>
-              80–100 · <strong style="color:var(--text)">Je les adores</strong> — pièces chéries, à garder absolument
+              80–100 · <strong style="color:var(--text)">Je l'adore</strong> — pièces chéries, à garder absolument
             </div>
             <div style="display:flex; align-items:center; gap:12px; font-size:14px; color:var(--text-dim);">
               <span style="width:10px; height:10px; border-radius:50%; background:#f59e0b; flex-shrink:0;"></span>
-              60–79 · <strong style="color:var(--text)">J'en ai besoin...</strong> — portés régulièrement
+              60–79 · <strong style="color:var(--text)">J'en ai besoin</strong> — portés régulièrement
             </div>
             <div style="display:flex; align-items:center; gap:12px; font-size:14px; color:var(--text-dim);">
               <span style="width:10px; height:10px; border-radius:50%; background:#f97316; flex-shrink:0;"></span>
-              40–59 · <strong style="color:var(--text)">J'hésite......</strong> — à réévaluer
+              40–59 · <strong style="color:var(--text)">J'hésite...</strong> — à réévaluer
             </div>
             <div style="display:flex; align-items:center; gap:12px; font-size:14px; color:var(--text-dim);">
               <span style="width:10px; height:10px; border-radius:50%; background:#ef4444; flex-shrink:0;"></span>
@@ -526,15 +526,15 @@
     </div>
   </section>
 
-  <!-- IA -->
+  <!-- STYLISTE -->
   <section class="ai-section">
     <div class="container">
       <div class="ai-card">
         <div>
-          <div class="section-label">Intelligence Artificielle</div>
+          <div class="section-label">Mon styliste</div>
           <h2 class="section-title">Ton styliste personnel, disponible 24h/24.</h2>
           <p style="font-size:16px; color:var(--text-dim); line-height:1.8; margin-bottom:24px;">
-            L'IA analyse tes pièces et propose des associations stylistiques pertinentes. Elle compare aussi ton dressing avec celui de tes Swappers pour suggérer des échanges ou dons qui ont du sens.
+            Mon styliste analyse tes pièces et propose des associations stylistiques pertinentes. Il compare aussi ton dressing avec celui de tes Swappers pour suggérer des échanges ou dons qui ont du sens.
           </p>
           <div style="display:flex; flex-direction:column; gap:12px;">
             <div style="display:flex; align-items:flex-start; gap:12px;">
@@ -585,7 +585,7 @@
     </div>
   </section>
 
-  <!-- KEEPERS -->
+  <!-- SWAPPERS -->
   <section class="swappers-section">
     <div class="container">
       <div class="section-label">La communauté</div>
