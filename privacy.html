@@ -2,23 +2,118 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Politique de confidentialité — Dressing Score</title>
 <style>
-body { font-family: sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; background: #0e0e0f; color: #f0ece4; }
-h1 { color: #c9a96e; }
-h2 { color: #c9a96e; margin-top: 30px; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif; max-width: 800px; margin: 40px auto; padding: 24px; background: #0e0e0f; color: #f0ece4; line-height: 1.7; }
+  h1 { color: #c9a96e; font-size: 32px; margin-bottom: 8px; letter-spacing: -.01em; }
+  h2 { color: #c9a96e; font-size: 20px; margin-top: 36px; margin-bottom: 12px; }
+  p { color: rgba(240,236,228,0.7); margin-bottom: 12px; }
+  ul { color: rgba(240,236,228,0.7); padding-left: 20px; margin-bottom: 16px; }
+  li { margin-bottom: 6px; }
+  strong { color: #f0ece4; }
+  a { color: #c9a96e; }
+  .meta { color: rgba(240,236,228,0.4); font-size: 13px; margin-bottom: 32px; }
+  table { width: 100%; border-collapse: collapse; margin: 12px 0 20px; font-size: 14px; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid rgba(255,255,255,0.06); vertical-align: top; }
+  th { color: #c9a96e; font-weight: 700; font-size: 12px; letter-spacing: .05em; text-transform: uppercase; }
+  td { color: rgba(240,236,228,0.7); }
+  footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.06); font-size: 13px; color: rgba(240,236,228,0.5); }
 </style>
 </head>
 <body>
-<h1>Politique de confidentialité</h1>
-<p>Dernière mise à jour : avril 2026</p>
-<h2>Données collectées</h2>
-<p>Dressing Score collecte des photos de vêtements pour les analyser via intelligence artificielle. Vos données sont stockées de manière sécurisée sur Supabase.</p>
-<h2>Utilisation des données</h2>
-<p>Vos données sont utilisées uniquement pour faire fonctionner l'application. Nous ne vendons pas vos données à des tiers.</p>
-<h2>Caméra</h2>
-<p>L'accès à la caméra est utilisé uniquement pour photographier vos vêtements.</p>
-<h2>Suppression des données</h2>
-<p>Vous pouvez demander la suppression de vos données à tout moment en nous contactant à gerald.berda@gmail.com</p>
+  <h1>Politique de confidentialité</h1>
+  <p class="meta">Dernière mise à jour : mai 2026</p>
+
+  <p>Cette politique explique quelles données Dressing Score collecte, sur quelle base juridique, comment elles sont utilisées, combien de temps elles sont conservées, et comment tu peux exercer tes droits conformément au Règlement général sur la protection des données (RGPD).</p>
+
+  <h2>1. Responsable du traitement</h2>
+  <p>Dressing Score est un service édité par <strong>Utilicore</strong>.<br>
+  Contact : <a href="mailto:admin@utilicore.org">admin@utilicore.org</a></p>
+  <p>Voir aussi les <a href="mentions-legales.html">mentions légales</a>.</p>
+
+  <h2>2. Délégué à la protection des données (DPO)</h2>
+  <p>Dressing Score n'est pas tenu de désigner un DPO au sens de l'article 37 du RGPD (structure de petite taille, absence de traitement à grande échelle de données sensibles). Toute question relative à la protection des données peut être adressée à <a href="mailto:admin@utilicore.org">admin@utilicore.org</a>.</p>
+
+  <h2>3. Données collectées et bases légales</h2>
+  <table>
+    <thead>
+      <tr><th>Donnée</th><th>Finalité</th><th>Base légale (RGPD Art. 6)</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Email + mot de passe (chiffré)</td><td>Création et accès au compte</td><td>Exécution du contrat</td></tr>
+      <tr><td>Prénom, genre, tailles, préférences de style</td><td>Personnalisation des suggestions</td><td>Exécution du contrat</td></tr>
+      <tr><td>Photos de vêtements, catégorie, état, saison, marque, valeur estimée, score</td><td>Tenue de ta garde-robe et estimation</td><td>Exécution du contrat</td></tr>
+      <tr><td>Liens d'amitié, échanges, dons, messages</td><td>Fonctionnalités sociales (Swappers)</td><td>Exécution du contrat</td></tr>
+      <tr><td>Token de notification push</td><td>Envoi des notifications</td><td>Consentement (autorisation système)</td></tr>
+      <tr><td>Logs techniques (erreurs, sécurité)</td><td>Diagnostic et sécurité de l'app</td><td>Intérêt légitime</td></tr>
+    </tbody>
+  </table>
+
+  <h2>4. Décisions automatisées et IA</h2>
+  <p>Dressing Score utilise un modèle d'intelligence artificielle (Anthropic Claude) pour reconnaître automatiquement tes vêtements à partir d'une photo et estimer leur valeur de revente. Ces traitements sont <strong>purement informatifs</strong> : ils ne produisent aucun effet juridique ni décision significative à ton égard, et tu peux toujours modifier ou ignorer les suggestions de l'app. L'article 22 du RGPD relatif aux décisions automatisées ne s'applique donc pas.</p>
+
+  <h2>5. Sous-traitants et destinataires</h2>
+  <ul>
+    <li><strong>Supabase Inc.</strong> — base de données, authentification, stockage des photos. Hébergement dans la région choisie pour le projet.</li>
+    <li><strong>Anthropic PBC</strong> (États-Unis) — analyse d'image par IA pour la reconnaissance et l'estimation. Les images sont transmises à l'API au moment du scan ; selon les conditions commerciales d'Anthropic, elles ne sont pas utilisées pour entraîner ses modèles.</li>
+    <li><strong>Expo</strong>, <strong>Apple</strong>, <strong>Google</strong> — distribution de l'app et acheminement des notifications push.</li>
+    <li><strong>Vercel Inc.</strong> — hébergement de ce site web.</li>
+  </ul>
+  <p>Aucune donnée n'est vendue ni partagée avec des annonceurs.</p>
+
+  <h2>6. Transferts hors Union européenne</h2>
+  <p>Certains sous-traitants (Anthropic, Vercel, Apple, Google) sont établis aux États-Unis ou opèrent des infrastructures hors UE. Ces transferts sont encadrés par :</p>
+  <ul>
+    <li>les <strong>Clauses contractuelles types</strong> de la Commission européenne (SCCs), ou</li>
+    <li>la certification <strong>EU-US Data Privacy Framework</strong> (DPF) lorsqu'elle s'applique au sous-traitant.</li>
+  </ul>
+  <p>Tu peux nous demander une copie ou une référence des garanties applicables.</p>
+
+  <h2>7. Durée de conservation</h2>
+  <ul>
+    <li><strong>Données du compte et du dressing</strong> : conservées tant que le compte est actif, et supprimées immédiatement à la suppression du compte.</li>
+    <li><strong>Comptes inactifs</strong> : si aucune connexion n'a lieu pendant 3 ans, le compte peut être supprimé après notification.</li>
+    <li><strong>Sauvegardes chiffrées</strong> : conservées jusqu'à 30 jours après suppression, le temps que les rotations de backup s'opèrent. Ces sauvegardes ne sont jamais réutilisées.</li>
+    <li><strong>Logs techniques</strong> : conservés 12 mois maximum.</li>
+  </ul>
+
+  <h2>8. Tes droits</h2>
+  <p>Conformément aux articles 15 à 22 du RGPD, tu disposes des droits suivants :</p>
+  <ul>
+    <li><strong>Accès</strong> à tes données personnelles</li>
+    <li><strong>Rectification</strong> des données inexactes</li>
+    <li><strong>Effacement</strong> (« droit à l'oubli ») — exerçable directement dans l'app via <em>Profil → Supprimer mon compte</em></li>
+    <li><strong>Limitation</strong> du traitement</li>
+    <li><strong>Portabilité</strong> de tes données dans un format structuré</li>
+    <li><strong>Opposition</strong> à un traitement fondé sur l'intérêt légitime</li>
+    <li><strong>Retrait du consentement</strong> à tout moment lorsque celui-ci est la base légale (notifications)</li>
+  </ul>
+  <p>Pour exercer ces droits : <a href="mailto:admin@utilicore.org">admin@utilicore.org</a>. Une réponse te sera apportée dans un délai d'un mois.</p>
+
+  <h2>9. Réclamation auprès de la CNIL</h2>
+  <p>Si tu estimes que tes droits ne sont pas respectés, tu peux introduire une réclamation auprès de la Commission nationale de l'informatique et des libertés (CNIL) : <a href="https://www.cnil.fr/fr/plaintes" target="_blank" rel="noopener">cnil.fr/fr/plaintes</a>.</p>
+
+  <h2>10. Suppression du compte</h2>
+  <p>Tu peux supprimer ton compte et toutes les données associées <strong>directement depuis l'app</strong>, dans <strong>Profil → Supprimer mon compte</strong>. La suppression est immédiate et irréversible. Détails : <a href="delete-account.html">page dédiée à la suppression</a>.</p>
+
+  <h2>11. Sécurité</h2>
+  <p>Les communications avec nos serveurs sont chiffrées en transit (TLS 1.2+). Les mots de passe sont hashés. L'accès aux données depuis l'app est protégé par des règles de sécurité au niveau ligne (Row Level Security) qui isolent strictement chaque utilisateur. En cas de violation de données susceptible d'engendrer un risque pour tes droits, tu seras notifié dans les 72 heures conformément à l'article 34 du RGPD.</p>
+
+  <h2>12. Caméra et photos</h2>
+  <p>L'accès à la caméra et à la galerie est utilisé uniquement pour photographier ou importer tes vêtements. Aucun autre média n'est lu. L'autorisation peut être révoquée à tout moment depuis les réglages de ton téléphone.</p>
+
+  <h2>13. Cookies et traceurs</h2>
+  <p>Ce site n'utilise pas de cookies de mesure d'audience ni de cookies publicitaires. Seuls des cookies strictement nécessaires au fonctionnement de l'hébergeur (Vercel) peuvent être déposés ; ils ne nécessitent pas de consentement préalable au sens de l'article 82 de la loi Informatique et Libertés.</p>
+
+  <h2>14. Mineurs</h2>
+  <p>Dressing Score n'est pas destiné aux enfants de moins de 15 ans (seuil de consentement numérique en France au sens de l'article 8 du RGPD et de l'article 7-1 de la loi Informatique et Libertés). Aucune donnée n'est collectée sciemment auprès d'un mineur de moins de 15 ans sans le consentement du titulaire de l'autorité parentale.</p>
+
+  <h2>15. Modifications</h2>
+  <p>Cette politique peut évoluer. La date de dernière mise à jour est indiquée en haut de la page. Les modifications substantielles te seront notifiées dans l'app.</p>
+
+  <footer>
+    <a href="index.html">← Retour à l'accueil</a> · <a href="delete-account.html">Supprimer mon compte</a> · <a href="mentions-legales.html">Mentions légales</a>
+  </footer>
 </body>
 </html>
